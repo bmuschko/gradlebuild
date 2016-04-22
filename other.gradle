@@ -1,0 +1,7 @@
+task helloWorld {
+    doLast {
+        println project.hasProperty('test')
+        println project.getProperty('test')
+        println System.properties['myProp']
+    }
+}

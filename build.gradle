@@ -1,0 +1,9 @@
+task runGradleSameDir(type: GradleBuild) {
+    buildFile = file('other.gradle')
+    tasks = ['helloWorld']
+}
+
+task runGradleSubDir(type: GradleBuild) {
+    buildFile = file('sub/test.gradle')
+    tasks = ['helloWorld']
+}
